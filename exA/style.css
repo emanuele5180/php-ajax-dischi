@@ -6,15 +6,27 @@
 
 
 .container {
+  width: 100%;
+  
   background-color: black;
-  padding: 0 30px;
+  padding: 0 10%;
   color: white;
+  display: flex;
+
 
 }
 
 .album-cube {
   width:20%;
-  height:auto;
+  height:300px;
+  margin: 50px 20px;
   background-color: grey;
+  display: flex;
+  flex-direction: column;
 
+
+}
+
+img  {
+width: 150px;
 }
