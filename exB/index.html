@@ -2,13 +2,23 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-
       <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script> <!-- handlebar -->
       <link rel="stylesheet" href="style.css">
-
     <title></title>
   </head>
+
+
   <body>
+
+    <script id="template" type="text/x-handlebars-template">
+      <div class="cd">
+        <img src= "{{poster}}" alt="">
+        <h3>{{title}}</h3>
+        <span class="author">{{author}}</span>
+        <span class="genre">{{genre}}</span>
+        <span class="year">{{year}}</span>
+      </div>
+    </script>
 
 
 
