@@ -19,6 +19,7 @@ della pagina ci saranno tutti i dischi. -->
 
         <?php
           include "data.php";
+          
 
           foreach ($album["response"] as $response) {
         ?>
