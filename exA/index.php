@@ -15,39 +15,27 @@ della pagina ci saranno tutti i dischi. -->
 
     <section class="container">
 
-      <div class="album-cube">
+
 
         <?php
           include "data.php";
-          
+
 
           foreach ($album["response"] as $response) {
         ?>
 
+        <div class="album-cube">
+
           <div class="img">
             <img src="<?php echo $response["poster"];?>" alt="<?php echo $response['title']; ?>">
           </div>
-
-
-          <h3>
-            <?php echo $response["title"] . "<br/>";?>
-          </h3>
-
-          <span class="author">
-            <?php echo $response["author"] . "<br/>";?>
-          </span>
-
-          <span class="genere">
-            <?php echo $response["genre"] . "<br/>";?>
-          </span>
-
-          <span class="year">
-            <?php echo $response["year"] . "<br/>";?>
-          </span>
-
-        <?php
-          echo "<br/>";
-
+          <h3><?php echo $response["title"] . "<br/>";?></h3>
+          <span class="author"><?php echo $response["author"] . "<br/>";?></span>
+          <span class="genere"><?php echo $response["genre"] . "<br/>";?></span>
+          <span class="year"><?php echo $response["year"] . "<br/>";?></span>
+        </div>
+          <?php
+            echo "<br/>";
         }
 
 
@@ -57,7 +45,7 @@ della pagina ci saranno tutti i dischi. -->
 
 
 
-      </div>
+
 
 
 
